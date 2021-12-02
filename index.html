@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chau Ngoc Tram</title>
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/background.css" />
+    <link rel="stylesheet" href="./css/about.css" />
+    <link rel="stylesheet" href="./css/portfolio.css" />
+    <link rel="stylesheet" href="./css/introduce.css" />
+    <link rel="stylesheet" href="./css/news.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      href="https://icon-library.com/images/cute-computer-icon/cute-computer-icon-26.jpg"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Praise&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
+      rel="stylesheet"
+    />
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <header>
+      <div class="logo">
+        <h1>ngoctram</h1>
+      </div>
+      <nav>
+        <ul>
+          <li>
+            <a href="">Home</a>
+          </li>
+          <li>
+            <a href="">About</a>
+          </li>
+          <li>
+            <a href="">Portfolio</a>
+          </li>
+          <li>
+            <a href="">News</a>
+          </li>
+          <li>
+            <a href="">Contact</a>
+          </li>
+        </ul>
+        <button>BUY NOW</button>
+      </nav>
+
+      <!-- <div class="bar" onclick="showNavPhone()">
+        <i class="fas fa-bars"></i>
+      </div> -->
+
+      <div id="toggle" onclick="showNavPhone()">
+        <i class="fas fa-bars"></i>
+      </div>
+
+      <div class="nav-phone" id="nav-phone">
+        <ul>
+          <li>Home</li>
+          <li>About</li>
+          <li>Portfolio</li>
+          <li>News</li>
+          <li>Contact</li>
+          <button>BUY NOW</button>
+          <div class="item">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fas fa-basketball-ball"></i>
+            <i class="fab fa-tiktok"></i>
+          </div>
+          <div class="close" onclick="closeNavPhone()">
+            <i class="fas fa-times"></i><a href="">Close</a>
+          </div>
+        </ul>
+      </div>
+    </header>
+
+    <div class="background" id="particles-js">
+      <!-- BEM: giảm sự trùng class -->
+      <div class="wrapper">
+        <div class="background__content">
+          <div class="background__content__name">
+            <h1>Ngọc Trâm</h1>
+          </div>
+          <div class="background__content__skill">
+            <ul>
+              <li>Front-end Developer</li>
+              <li>Back-end Developer</li>
+              <li>Fullstack Developer</li>
+            </ul>
+          </div>
+          <div class="background__content__from">based in HCM City</div>
+          <div class="background__content__button">
+            <a href="https://www.facebook.com/ngoctram.chau.0304/"
+              ><i class="fab fa-facebook-f"></i> <span>Connect to Me</span></a
+            >
+
+            <a href="https://www.instagram.com/_ngtram.chuu/"
+              ><i class="fab fa-instagram"></i> <span>Connect to Me</span></a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="js/app.js"></script>
+
+    <script>
+      function showNavPhone() {
+        // scope
+        // DOM
+        document.getElementById("nav-phone").style.transform = "none";
+        // document.getElementById("nav-phone").style.animation = "none";
+      }
+    </script>
+    <script>
+      function closeNavPhone() {
+        document.getElementById("nav-phone").style.transform = "close";
+      }
+    </script>
+
+    <!-- mũi tên back & scroll thanh header -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(window).scroll(function (event) {
+          if ($(this).scrollTop()) {
+            $("header").addClass("sticky");
+          } else {
+            $("header").removeClass("sticky");
+          }
+          if ($(this).scrollTop()) {
+            $(".back-to-top").addClass("hien-ra");
+          } else {
+            $(".back-to-top").removeClass("hien-ra");
+          }
+        });
+
+        $(".back-to-top").click(function (event) {
+          $("html,body").animate({ scrollTop: 0 }, 1200);
+        });
+
+        // $("#toggle").click(function () {
+        //   $("#nav-phone").slideToggle;
+        // });
+      });
+    </script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
+    <!-- ABOUT -->
+    <div class="about">
+      <div class="wrapper1">
+        <div class="about__content">
+          <div
+            class="about__content__img"
+            data-aos="fade-up"
+            data-aos-anchor-placement="top-bottom"
+          >
+            <img
+              src="https://scontent.fsgn5-9.fna.fbcdn.net/v/t1.6435-9/79184058_1102596136798744_9050624152947392512_n.jpg?_nc_cat=105&ccb=1-5&_nc_sid=174925&_nc_ohc=Gw6KxUnEHBoAX9LBQ9j&tn=7ViTRFIGP8hlacuJ&_nc_ht=scontent.fsgn5-9.fna&oh=88562c36faaa018362a60959c2520c2c&oe=61C30956"
+              alt=""
+              width="500px"
+            />
+          </div>
+
+          <div class="about__content__me">
+            <div
+              class="about__content__me__title"
+              data-aos="fade-up"
+              data-aos-anchor-placement="bottom-bottom"
+            >
+              <h5>ABOUT ME</h5>
+              <h1>Creative Independent Web Developer based in HCM</h1>
+            </div>
+
+            <div
+              class="about__content__me__para"
+              data-aos="fade-up"
+              data-aos-anchor-placement="bottom-bottom"
+            >
+              <p>
+                I'm web designer, and I'm very passionate and dedicated to my
+                work. With 20 years experience as a professional web developer,
+                I have acquired the skills and knowledge necessary to make your
+                project a success. I enjoy every step of the design process,
+                from discussion and collaboration.
+              </p>
+              <button>DOWNLOAD CV</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="back-to-top">
+      <i class="fas fa-chevron-up"></i>
+    </div>
+
+    <!-- Portfolio -->
+    <div class="portfolio">
+      <div class="portfolio__content">
+        <div class="portfolio__content__head">
+          <div class="portfolio__content__head__title">
+            <h5>PORTFOLIO</h5>
+            <h1>Creative Portfolio</h1>
+          </div>
+
+          <div class="portfolio__content__head__menu">
+            <ul>
+              <li>
+                <a href="">All</a>
+              </li>
+              <li>
+                <a href="">Design</a>
+              </li>
+              <li>
+                <a href="">Branding</a>
+              </li>
+              <li>
+                <a href="">Photography</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="portfolio__content__img">
+          <div class="portfolio__content__img__part1">
+            <!-- box1 -->
+            <div
+              class="portfolio__content__img__part1__box1"
+              data-aos="fade-right"
+              data-aos-offset="300"
+              data-aos-easing="ease-in-sine"
+            >
+              <img
+                src="https://images.unsplash.com/photo-1528121238716-306799520ddc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80"
+                alt=""
+                width="300px"
+              />
+              <div class="portfolio__content__img__part1__box1__content">
+                <h3>My Story</h3>
+                <p>Design</p>
+              </div>
+            </div>
+
+            <!-- box2 -->
+            <div
+              class="portfolio__content__img__part1__box2"
+              data-aos="fade-down"
+              data-aos-easing="linear"
+              data-aos-duration="1000"
+            >
+              <img
+                src="https://images.unsplash.com/photo-1527683040093-3a2b80ed1592?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=915&q=80"
+                alt=""
+                width="300px"
+              />
+              <div class="portfolio__content__img__part1__box2__content2">
+                <h3>Design Trend</h3>
+                <p>Branding</p>
+              </div>
+            </div>
+
+            <!-- box3 -->
+            <div
+              class="portfolio__content__img__part1__box3"
+              data-aos="fade-left"
+              data-aos-offset="300"
+              data-aos-easing="ease-in-sine"
+            >
+              <img
+                src="https://images.unsplash.com/photo-1502898664531-0564045a0da9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80"
+                alt=""
+                width="300px"
+              />
+              <div class="portfolio__content__img__part1__box3__content">
+                <h3>Ice Cream</h3>
+                <p>Photography</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="portfolio__content__img__part2">
+            <!-- box4 -->
+            <div
+              class="portfolio__content__img__part2__box4"
+              data-aos="fade-right"
+              data-aos-offset="300"
+              data-aos-easing="ease-in-sine"
+            >
+              <img
+                src="https://images.unsplash.com/photo-1573247318234-a388aa0a8b37?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80"
+                alt=""
+                width="300px"
+              />
+              <div class="portfolio__content__img__part2__box4__content">
+                <h3>Shane Design</h3>
+                <p>Design</p>
+              </div>
+            </div>
+
+            <!-- box5 -->
+            <div
+              class="portfolio__content__img__part2__box5"
+              data-aos="fade-up"
+              data-aos-easing="linear"
+              data-aos-duration="1000"
+            >
+              <img
+                src="https://images.unsplash.com/photo-1568936829638-715cab9b5142?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=908&q=80"
+                alt=""
+                width="300px"
+              />
+              <div class="portfolio__content__img__part2__box5__content">
+                <h3>Sweet Cherry</h3>
+                <p>Photography</p>
+              </div>
+            </div>
+
+            <!-- box6 -->
+            <div
+              class="portfolio__content__img__part2__box6"
+              data-aos="fade-left"
+              data-aos-offset="300"
+              data-aos-easing="ease-in-sine"
+            >
+              <img
+                src="https://images.unsplash.com/photo-1565038941323-e5ceac0fcde2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80"
+                alt=""
+                width="300px"
+              />
+              <div class="portfolio__content__img__part2__box6__content">
+                <h3>Behance Shoot</h3>
+                <p>Branding</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Introduce -->
+    <div class="introduce">
+      <div class="introduce__content" data-aos="fade-right">
+        <div class="introduce__content__intro">
+          <h1>I have high skills in developing and programming</h1>
+          <p>
+            I am working on a professional, visually sophisticated and
+            technologically proficient, responsive and multi-functional personal
+            portfolio template Shane.
+          </p>
+        </div>
+
+        <div class="introduce__content__skill">
+          <p>Front-end</p>
+          <div class="container">
+            <div class="skills front-end">90%</div>
+          </div>
+
+          <p>Back-end</p>
+          <div class="container">
+            <div class="skills back-end">90%</div>
+          </div>
+
+          <p>Fullstack</p>
+          <div class="container">
+            <div class="skills fullstack">80%</div>
+          </div>
+        </div>
+      </div>
+      <div class="introduce__watch" data-aos="fade-up" data-aos-duration="2000">
+        <span><i class="fas fa-play"></i></span>
+        <h1>I am delivering beautiful digital products for my clients</h1>
+        <button>Watch video</button>
+      </div>
+    </div>
+
+    <!-- News -->
+    <div class="news">
+      <div class="news__part1">
+        <div class="news__part1__title" data-aos="fade-right">
+          <h5>TESTIMONIALS</h5>
+          <h1>What clients say about my portfolio template</h1>
+        </div>
+        <div class="news__part1__content" data-aos="fade-up">
+          <ul>
+            <li>
+              <p>
+                Really the Code, Support, and design are awesome and its good
+                support they are giving. They give an instant solution to our
+                need. Really awesome. I will strongly recommend to my friends.
+                Great template, even better service!
+              </p>
+              <h3>Bauen Fernandes</h3>
+              <h5>Web Developer</h5>
+            </li>
+
+            <li>
+              <p>
+                We were looking for a logo with a touch of modernism. Arlo
+                grasped our need and produced a stunning design. Awesome to work
+                with Arlo. Incredibly organized, easy to communicate with,
+                responsive with next iterations.
+              </p>
+              <h3>Justin Bieber</h3>
+              <h5>Photographer</h5>
+            </li>
+
+            <li>
+              <p>
+                I purchased the theme a few weeks ago. I had some issues with
+                the theme, I asked customer support to help me with and they
+                were helpful and kind to help me with all my problems. I
+                definitely recommend this theme to everyone.
+              </p>
+              <h3>Teodor Federico</h3>
+              <h5>Freelancer</h5>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="news__part2">
+        <div class="news__part2__title">
+          <h5>NEWS</h5>
+          <h1>Latest News</h1>
+        </div>
+
+        <div class="news__part2__content">
+          <!-- item1 -->
+          <div class="news__part2__content__item1" data-aos="flip-left">
+            <img
+              src="https://images.unsplash.com/photo-1573164574572-cb89e39749b4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80"
+              alt=""
+              width="380px"
+              height="250px"
+            />
+            <div class="news__part2__content__item1__nd">
+              <h3>Developers watch out for these burnout symptoms</h3>
+              <p>BY <a href="">ALEX WATSON</a>/ 20 MAY 2020</p>
+            </div>
+          </div>
+
+          <!-- item2 -->
+          <div class="news__part2__content__item2" data-aos="flip-left">
+            <img
+              src="https://images.unsplash.com/photo-1573496773905-f5b17e717f05?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80"
+              alt=""
+              width="380px"
+              height="250px"
+            />
+            <div class="news__part2__content__item1__nd">
+              <h3>How to be appreciated for your hard work as a developer</h3>
+              <p>BY <a href=""> BROOK KENNEDY </a>/ 07 APRIL 2020</p>
+            </div>
+          </div>
+
+          <!-- item3 -->
+          <div class="news__part2__content__item3" data-aos="flip-left">
+            <img
+              src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+              alt=""
+              width="380px"
+              height="250px"
+            />
+            <div class="news__part2__content__item1__nd">
+              <h3>How designers and developers can collaborate better</h3>
+              <p>BY <a href=""> PAOLA ATKINS </a>/ 02 MARCH 2020</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="wrapper">
+      <div id="last" class="contact"></div>
+    </div>
+  </body>
+</html>
+
+<!-- 
+    SCSS
+    SASS
+    LESS
+ -->

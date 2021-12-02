@@ -1,0 +1,243 @@
+.news {
+  height: 100vh;
+  position: relative;
+  margin: 50px 0;
+}
+
+.news__part1 {
+  margin-top: -150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.news__part1__title {
+  width: 550px;
+  margin-right: 140px;
+}
+
+.news__part1__title h5 {
+  background-color: #dddd;
+  width: 130px;
+  height: 35px;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.news__part1__title h1 {
+  font-family: "Lobster", cursive;
+  font-size: 42px;
+  letter-spacing: 1px;
+}
+
+.news__part1__content ul {
+  list-style: none;
+  height: 260px;
+  overflow: hidden;
+}
+
+.news__part1__content ul li {
+  -webkit-animation-name: slided;
+          animation-name: slided;
+  -webkit-animation-duration: 9s;
+          animation-duration: 9s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+.news__part1__content h3 {
+  padding: 10px;
+}
+
+.news__part1__content h5 {
+  padding: 0 18px;
+}
+
+.news__part1__content p {
+  font-size: 14px;
+  letter-spacing: 1px;
+  width: 560px;
+  line-height: 30px;
+  color: #767676;
+  padding: 10px 0;
+  margin: 20px 0;
+}
+
+.news__part2 {
+  padding: 10px 0;
+  margin-left: 20px;
+  margin-top: 100px;
+}
+
+.news__part2__title {
+  margin-left: 120px;
+}
+
+.news__part2__title h5 {
+  background-color: #dddd;
+  width: 70px;
+  height: 35px;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.news__part2__title h1 {
+  font-family: "Lobster", cursive;
+  font-size: 42px;
+  letter-spacing: 1px;
+}
+
+.news__part2__content {
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.news__part2__content__item1 {
+  padding: 10px 20px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.news__part2__content__item1__nd {
+  width: 400px;
+}
+
+.news__part2__content__item1__nd h3 {
+  letter-spacing: 1px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.news__part2__content__item1__nd p {
+  padding: 10px;
+  font-size: 14px;
+}
+
+.news__part2__content__item1__nd p a {
+  text-decoration: none;
+  color: #000;
+}
+
+.news__part2__content__item1:hover {
+  -webkit-transform: translateY(20px);
+          transform: translateY(20px);
+}
+
+.news__part2__content__item2 {
+  padding: 10px 20px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.news__part2__content__item2__nd {
+  width: 400px;
+}
+
+.news__part2__content__item2__nd h3 {
+  letter-spacing: 1px;
+  padding: 10px;
+}
+
+.news__part2__content__item2__nd p {
+  padding: 10px;
+  font-size: 14px;
+}
+
+.news__part2__content__item2__nd p a {
+  text-decoration: none;
+  color: #000;
+}
+
+.news__part2__content__item2:hover {
+  -webkit-transform: translateY(20px);
+          transform: translateY(20px);
+}
+
+.news__part2__content__item3 {
+  padding: 10px 20px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.news__part2__content__item3__nd {
+  width: 400px;
+}
+
+.news__part2__content__item3__nd h3 {
+  letter-spacing: 1px;
+  padding: 10px;
+}
+
+.news__part2__content__item3__nd p {
+  padding: 10px;
+  font-size: 14px;
+}
+
+.news__part2__content__item3__nd p a {
+  text-decoration: none;
+  color: #000;
+}
+
+.news__part2__content__item3:hover {
+  -webkit-transform: translateY(20px);
+          transform: translateY(20px);
+}
+
+@-webkit-keyframes disappear {
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes disappear {
+  to {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes slided {
+  25% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  50% {
+    -webkit-transform: translateY(-240px);
+            transform: translateY(-240px);
+  }
+  75% {
+    -webkit-transform: translateY(-480px);
+            transform: translateY(-480px);
+  }
+  100% {
+    -webkit-transform: translateY(-500px);
+            transform: translateY(-500px);
+  }
+}
+
+@keyframes slided {
+  25% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  50% {
+    -webkit-transform: translateY(-240px);
+            transform: translateY(-240px);
+  }
+  75% {
+    -webkit-transform: translateY(-480px);
+            transform: translateY(-480px);
+  }
+  100% {
+    -webkit-transform: translateY(-500px);
+            transform: translateY(-500px);
+  }
+}
+/*# sourceMappingURL=news.css.map */

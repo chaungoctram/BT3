@@ -1,0 +1,110 @@
+.introduce {
+  height: 100vh;
+  position: relative;
+  margin: 450px 100px;
+  h1 {
+    font-family: "Lobster", cursive;
+    font-size: 42px;
+    letter-spacing: 1px;
+  }
+  &__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+
+    > * {
+      width: 600px;
+    }
+    &__intro {
+      width: 550px;
+      margin: 0 30px;
+      p {
+        font-size: 14px;
+        letter-spacing: 1px;
+        width: 580px;
+        line-height: 30px;
+        color: #767676;
+        padding: 10px 0;
+        margin: 20px 0;
+      }
+    }
+    &__skill {
+      width: 600px;
+      margin-left: 70px;
+
+      .container {
+        width: 100%;
+        background-color: #ddd;
+      }
+      /* định dạng chung cho thẻ hiển thị skill */
+      .skills {
+        text-align: right;
+        padding-right: 10px;
+        line-height: 5px;
+        color: white;
+        border-radius: 3px;
+        font-size: 12px;
+      }
+      /* định dạng cho từng skill theo số liệu */
+      .front-end {
+        margin-top: 5px;
+        margin-bottom: 30px;
+        width: 90%;
+        background-color: #000;
+      }
+      .back-end {
+        margin-top: 5px;
+        margin-bottom: 30px;
+        width: 90%;
+        background-color: #000;
+      }
+      .fullstack {
+        margin-top: 5px;
+        margin-bottom: 30px;
+        width: 80%;
+        background-color: #000;
+      }
+    }
+  }
+
+  &__watch {
+    color: #fff;
+    width: 100%;
+    height: 500px;
+    background-size: cover;
+    text-align: center;
+    margin-top: 10px;
+    background-image: url(https://images.unsplash.com/photo-1571171637578-41bc2dd41cd2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    i {
+      margin-top: 150px;
+    }
+    span {
+      background-color: #fff;
+      padding: 30px;
+      color: #000;
+      font-size: 35px;
+      border-radius: 55px;
+      cursor: pointer;
+      // align-items: center;
+      transition: all 1s;
+    }
+    h1 {
+      margin-top: 50px;
+      margin-bottom: 20px;
+      width: 700px;
+      margin-left: 310px;
+    }
+    button {
+      background-color: transparent;
+      transition: all 0.5s;
+      &:hover {
+        color: #000;
+        background-color: #fff;
+        transform: translateY(-10px);
+      }
+    }
+  }
+}
